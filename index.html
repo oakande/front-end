@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/mobile.css"> -->
+</head>
+<body>
+  <div class="wrapper">
+
+    <div id="signup-screen" style="display: none;">
+      <div class="title1">
+        <h3 class="brand">Sign Up</h3>
+        <h5 class="subtitle">Enter your personal details below:</h5>
+      </div>
+
+      <div class="form">
+        <input type="text" id="fname-field" placeholder="First Name">
+        <input type="text" id="lname-field" placeholder="Last Name">
+        <input type="email" id="email-field" placeholder="Email">
+        <input type="password" id="pw-field" placeholder="Password">
+      </div>
+
+      <div class="btn-container">
+          <button class="btn btn-large" id="back1">Back</button>
+          <button class="btn btn-large" id="save-user" type="button">Submit</button>
+      </div>
+    </div>
+
+    <div id="login-screen" style="display: none;">
+      <div class="title1">
+        <h3 class="brand">Panda Movies App</h3>
+        <h5 class="subtitle">Please! login to continue</h5>
+      </div>
+
+      <div class="form login">
+
+        <div class="form__field">
+          <input id="init-email" type="text" placeholder="Email" required="">
+        </div>
+  
+        <div class="form__field">
+          <input id="init-pw" type="password"  placeholder="Password" required="">
+        </div>
+
+        <div class="login_fields__submit">
+            <input type="submit" id="login-btn" value="Log In">                  
+            <div class="forgot" id="signup-btn">
+              <a href="#">Not Registered?</a>
+            </div>
+        </div>
+
+        <!-- <button class="btn btn-large" id="login-btn" type="button">Log In</button>
+        <button class="btn btn-large" id="signup-btn" type="button">Sign Up</button> -->
+  
+      </div>
+    </div>
+
+    <div id="welcome-screen" style="display: none;">
+      <div class="welcome-img"></div>
+
+      <div class="welcome-console">
+        <h2>Welcome to the Penguin Movie App,</h2>
+        <p style="padding-top: 25px;">Where we have the best movie selections.</p>
+        <p>You can add, edit, and delete<br>
+        a movie of your choice.</p>
+      </div>
+
+      <button type="button" id="welcome-btn">Start exploring movies</button>
+    </div>
+
+    <div id="add-movie" style="display: none;">
+
+      <div class="form">
+        <p type="Title:">
+          <input id="title-field" for="title" placeholder="Write the movie title..">
+        </p>
+        <p type="Genre:" class="half">
+          <input id="genre-field" placeholder="Action, Scary, Documentary..."></p>
+        <p type="Year:" class="half" style="padding-left:15px;"><input id="year-field" placeholder="e.g. 2014"></p>
+        <p type="Movie Poster:">
+          <input id="poster-field" placeholder='Search https://www.moviestillsdb.com for movie poster'>
+        </p>
+        <p type="Description:" class="full"><textarea id="descr-field" placeholder="Some description.." rows="4"></textarea></p>
+      </div>
+
+      <div class="btn-container">
+        <button class="btn btn-large" id="go-back">
+          <i class="fa fa-arrow-left">Back</i>
+        </button>
+        <button class="btn btn-large" id="save-button" type="button">Submit</button>
+      </div>
+
+    </div>
+
+    <div id="show-movies" style="display: none;">
+      <h2>Penguin Movies</h2>
+      <ul id="list"></ul>
+      <button class="btn btn-large" id="viewAddMovie">Add New Movie</button>
+    </div>
+
+    <div id="update-movie" style="display: none;">
+      <p type="Title:">
+        <input id="update-title">
+      </p>
+      <p type="Genre:" class="half">
+        <input id="update-genre">
+      </p>
+      <p type="Year:" class="half" style="padding-left:15px;">
+        <input id="update-year">
+      </p>
+      <p type="Movie Poster:">
+        <input id="update-poster">
+      </p>
+      <p type="Description:" class="full">
+        <textarea id="update-descr" rows="4"></textarea>
+      </p>
+
+      <div class="btn-container">
+        <button class="btn btn-large" id="update-back">
+          <i class="fa fa-arrow-left">Back</i>
+        </button>
+        <button class="btn btn-large" id="update-button">Submit</button>
+      </div>
+      
+    </div>
+
+
+  </div>
+
+  <!-- <ul id="singleList"</ul>  -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
